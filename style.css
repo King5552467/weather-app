@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    list-style: none;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    color: #fff;
+}
+.banner1, .banner2, .banner3, .banner4, .banner5, .banner6{
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+img{
+    width: 120%;
+    height: 120vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    animation: zoom-out 3s  linear infinite;
+}
+@keyframes zoom-out{
+    100%{
+        width: 100%;
+        height: 100vh;
+    }
+}
+.container{
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    height: 100vh;
+    background: rgba(0,0,0,.7);
+}
+.container h1{
+    padding: 15px 0;
+    font-size: 5em;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: cyan;
+}
+.container input[type=text]{
+    height: 60px;
+    width: 500px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 50px;
+    padding: 0 40px;
+    font-size: 1.3em;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-sizing: border-box;
+}
+.btn, .button{
+    color: #fff;
+    padding: 10px 30px;
+    margin: 20px 10px;
+    border: 2px solid transparent;;
+    border-radius: 5px;
+    font-weight: 600;
+    background: rgb(29, 109, 108);
+    cursor: pointer;
+}
+.btn:hover{
+    color: #000;
+    background: #0ff;
+    border: 2px solid rgb(255, 0, 0);
+}
+.button{
+    color: #fff;
+    background: rgb(121, 4, 4);
+}
+.button:hover{
+    background: rgb(255, 0, 0);
+    border: 2px solid rgb(59, 177, 176);
+}
+.result{
+    margin: 50px 0;
+    line-height: 1.6;
+}
+.result .city{
+    font-size: 3.5em;
+}
+.result .temp{
+    font-size: 2em;
+    font-weight: 700;
+}
+.result .desc{
+    font-size: 2em;
+    text-transform: capitalize;
+}
+.error{
+    font-size: 3em;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+.banner1{
+    animation: slide1 12s linear infinite;
+}
+@keyframes slide1{
+    0%{
+        visibility: visible;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+.banner2{
+    animation: slide2 12s linear infinite;
+}
+@keyframes slide2{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: visible;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+.banner3{
+    animation: slide3 12s linear infinite;
+}
+@keyframes slide3{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: visible;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+.banner4{
+    animation: slide4 12s linear infinite;
+}
+@keyframes slide4{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+@media(max-width: 700px){
+    .container input[type=text]{
+        height: 50px;
+        width: 400px;
+        font-size: 1em;
+        margin: 0 30px;
+        padding: 0 30px;
+    }
+    .container h1{
+        font-size: 4em;
+    }
+    .btn, .button{
+        padding: 8px 20px;
+        margin: 20px 10px;
+    }
+    .error{
+        font-size: 2.5em;
+    }
+}
+@media(max-width: 550px){
+    .container input[type=text]{
+        height: 35px;
+        width: 300px;
+        margin: 0 10px;
+        padding:  0 20px;
+        font-size: .8em;
+    }
+    .container h1{
+        font-size: 3em;
+    }
+    .btn, .button{
+        padding: 5px 10px;
+        margin: 20px 7px;
+        font-weight: 500;
+    }
+    .error{
+        font-size: 2em;
+    }
+}

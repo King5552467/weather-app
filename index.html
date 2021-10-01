@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather app</title>
+</head>
+<body>
+
+    <div class="banner1">
+        <img src="spacial5.jpg" alt="Weather">
+    </div>
+    <div class="banner2">
+        <img src="spacial2.jpg" alt="Weather">
+    </div>
+    <div class="banner3">
+        <img src="spacial3.jpg" alt="Weather">
+    </div>
+    <div class="banner4">
+        <img src="spacial4.jpg" alt="Weather">
+    </div>
+
+    <div class="container">
+        <h1>Weather App</h1>
+        <input type="text" spellcheck="true" class="cityName" placeholder="&#9998;   Search for places. . ." required><br>
+        <input type="submit" value="&#x1F50E;&#xFE0E; Search" class="btn">
+        <input type="submit" value="Refresh &#x27f2;" class="button" onclick="window.location.reload()">
+
+        <!-- for show details -->
+
+        <div class="result"></div>
+    </div>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
